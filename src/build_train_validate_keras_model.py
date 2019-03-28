@@ -7,19 +7,18 @@ Created on Sun Sep 10 08:30:08 2017
 """
 
 from keras.applications import VGG16
+import os
+import numpy as np
+from keras.preprocessing.image import ImageDataGenerator
 
 conv_base = VGG16(weights='imagenet',
              include_top=False,
                   input_shape=(300, 225, 3))
 
-conv_base.summary()
-########################################################################################
-import os
-import numpy as np
-from keras.preprocessing.image import ImageDataGenerator
+#conv_base.summary()
 
+# Define sources of data
 base_dir = '/home/alexey/Documents/tires/images/run4_SET1AND2_3_classes/'
-
 train_dir = os.path.join(base_dir, 'train')
 validation_dir = os.path.join(base_dir, 'validation')
 test_dir = os.path.join(base_dir, 'test')
