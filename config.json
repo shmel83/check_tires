@@ -1,0 +1,8 @@
+{
+    "folder_config"  		: {
+        "basedir"    		: "/home/alexey/data/check_tire/images/three_classes/",
+        "train_subdir"      	: "train",
+        "validation_subdir"     : "validation",
+        "testing_subdir"      	: "test"
+    }
+}
